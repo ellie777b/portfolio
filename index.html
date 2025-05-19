@@ -197,12 +197,62 @@
 
     <section id="contact" class="contact-section">
         <h2>Контакти</h2>
-        <div class="contact-info">
-            <p>Email: your.email@example.com</p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-            <!-- Добавете повече контакти -->
+        <div class="contact-info" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <div class="contact-card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Връзка с мен</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin: 10px 0;">
+                        <strong>📧 Email:</strong>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <strong>📱 Телефон:</strong>
+                        <a href="tel:+359888888888">+359 88 888 8888</a>
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <strong>📍 Локация:</strong>
+                        София, България
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social-links" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Социални мрежи</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin: 10px 0;">
+                        <a href="https://github.com/yourusername" target="_blank" style="text-decoration: none; color: #333;">
+                            <strong>GitHub:</strong> github.com/yourusername
+                        </a>
+                    </li>
+                    <li style="margin: 10px 0;">
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" style="text-decoration: none; color: #333;">
+                            <strong>LinkedIn:</strong> linkedin.com/in/yourusername
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-form" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <h3>Изпратете съобщение</h3>
+                <form id="contactForm" onsubmit="return handleSubmit(event)" style="display: flex; flex-direction: column; gap: 15px;">
+                    <input type="text" placeholder="Вашето име" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="email" placeholder="Вашият email" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                    <textarea placeholder="Вашето съобщение" required style="padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-height: 100px;"></textarea>
+                    <button type="submit" style="background: #2c3e50; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer;">Изпрати</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            // Тук можете да добавите логика за изпращане на формата
+            alert('Благодаря за съобщението! Ще се свържа с вас скоро.');
+            event.target.reset();
+            return false;
+        }
+    </script>
 
     <footer>
         <p>&copy; 2024 Вашето Име. Всички права запазени.</p>
