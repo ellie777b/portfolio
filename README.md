@@ -1,48 +1,39 @@
-# My Portfolio
+# Live Healthy - Здравословен начин на живот
 
-Портфолио сайт с API функционалност, хостнат на GitHub Pages.
+A website promoting healthy lifestyle through recipes and nutrition tips.
 
-## Структура на проекта
+## Features
 
-### Модули:
-1. **Автобиография** (`/bio`)
-   - HTML/CSS за автобиографията
-   - Responsive дизайн
-   - GitHub Pages хостинг
+- Responsive design
+- Recipe showcase
+- Integration with Spoonacular API for additional recipes
+- Contact information
+- Healthy lifestyle tips
 
-2. **API Функционалност** (`/api`)
-   - REST API endpoints
-   - Документация
-   - Тестове
+## Setup
 
-3. **Портфолио Галерия** (`/portfolio`)
-   - Галерия с проекти
-   - Филтриране и търсене
-   - Интерактивни елементи
+1. Clone the repository
+2. Create an `images` folder and add the required images:
+   - logo.jpg
+   - smoothie.jpg
+   - quinoa-salad.jpg
+   - fruit-salad.jpg
+3. For API functionality, you'll need to:
+   - Sign up for a Spoonacular API key
+   - Create a `.env` file with your API key
+   - Or use the provided backend proxy
 
-4. **Контакти** (`/contact`)
-   - Контактна форма
-   - Социални медии линкове
-   - Google Maps интеграция
+## Technologies Used
 
-## Технологии
 - HTML5
-- CSS3 (с Flexbox и Grid)
-- JavaScript (ES6+)
-- GitHub Pages за хостинг
-- REST API
+- CSS3
+- JavaScript
+- Spoonacular API
 
-## Инсталация и стартиране
-1. Клонирайте репозиторито
-2. Отворете `index.html` в браузъра
-3. За API функционалността, следвайте инструкциите в `/api/README.md`
+## Live Demo
 
-## Commit структура
-Всеки модул е разработен в отделен commit:
-- `feat/bio`: Автобиография модул
-- `feat/api`: API функционалност
-- `feat/portfolio`: Портфолио галерия
-- `feat/contact`: Контактна форма
-- `docs`: Документация и README файлове
-- `style`: CSS стилове и дизайн
-- `fix`: Корекции и подобрения 
+Visit the live site at: [https://YOUR_USERNAME.github.io/live-healthy-site/]
+
+## License
+
+MIT License 
